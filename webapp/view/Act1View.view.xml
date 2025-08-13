@@ -44,6 +44,14 @@
 
                 </sap.ui.layout.form:content>
         </sap.ui.layout.form:SimpleForm>
+        <!-- Add Save and Clear buttons below simple form -->
+     <HBox width="100%" id="Hbox" direction="RowReverse">
+        <items>
+            <Button text="Clear" id="Clear" type="Reject" press="onClear"/>
+            <Button text="Save"  id="Save" type="Success" press="onSave"/> 
+        </items>
+    </HBox>
+
     </content>
     </Page>
 </mvc:View>
