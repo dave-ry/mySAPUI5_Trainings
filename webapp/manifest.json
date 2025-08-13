@@ -1,0 +1,98 @@
+{
+  "_version": "1.65.0",
+  "sap.app": {
+    "id": "my.sapui5.act1.training.act1simpleform",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.18.4",
+      "toolsId": "024a23dc-04e7-4193-be2b-78e399de743c"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.139.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "my.sapui5.act1.training.act1simpleform.i18n.i18n"
+        }
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "transition": "slide",
+        "type": "View",
+        "viewType": "XML",
+        "path": "my.sapui5.act1.training.act1simpleform.view",
+        "async": true,
+        "viewPath": "my.sapui5.act1.training.act1simpleform.view"
+      },
+      "routes": [
+        {
+          "name": "RouteAct1View",
+          "pattern": ":?query:",
+          "target": [
+            "TargetAct1View"
+          ]
+        }
+      ],
+      "targets": {
+        "TargetAct1View": {
+          "id": "Act1View",
+          "name": "Act1View"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "my.sapui5.act1.training.act1simpleform.view.App",
+      "type": "XML",
+      "id": "App",
+      "async": true
+    }
+  }
+}
