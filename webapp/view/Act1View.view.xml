@@ -26,6 +26,22 @@
                     <Input width="480px" id="inputCity"/> -->
                 <!-- </items> -->
                 <!-- </HBox> -->
+                
+                <Label text="Country" id="country"/> 
+                <Select id="selCountry" forceSelection="false" width="75%">
+                    <items>
+                    <!-- Exploring using Item and List Item -->
+                        <!-- <sap.ui.core:Item key="1" text="England"     id="england"></sap.ui.core:Item> -->
+                        <sap.ui.core:ListItem key="1" text="England" id="england"/>
+                        <!-- <sap.ui.core:Item key="2" text="Germany"     id="germany"></sap.ui.core:Item> -->
+                        <sap.ui.core:ListItem key="2" text="Germany" id="germany"/>
+                        <!-- <sap.ui.core:Item key="3" text="USA"         id="usa"></sap.ui.core:Item> -->
+                        <sap.ui.core:ListItem key="3" text="USA" id="usa"/>
+                        <!-- <sap.ui.core:Item key="4" text="Philippines" id="philippines"></sap.ui.core:Item> -->
+                        <sap.ui.core:ListItem key="4" text="Philippines" id="philippines"/>
+                    </items>
+                </Select>      
+
                 </sap.ui.layout.form:content>
         </sap.ui.layout.form:SimpleForm>
     </content>
