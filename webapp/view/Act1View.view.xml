@@ -1,6 +1,33 @@
-<mvc:View controllerName="my.sapui5.act1.training.act1simpleform.controller.Act1View"
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="my.sapui5.act1.training.act1simpleform.controller.Act1View">
     <Page id="page" title="{i18n>title}">
+    <content>
+        <sap.ui.layout.form:SimpleForm editable="true" layout="ResponsiveGridLayout" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" id="simpleForm" width="100%">
+            <sap.ui.layout.form:content>
+                <!-- Code at the top are auto-generated from layout using SimpleForm -->
+                <!-- <sap.ui.core:Title text="Title" id="title0"/> -->
+                <Label text="Name" id="labelName"/>
+                <!-- <Input placeholder="Enter Name" width="75%" id="inputName" /> -->
+                <Input width="75%" id="inputName"/>
+
+                <Label text="Street/No" id="labelStreet"/>                
+                <!-- <Input placeholder="Street" width="100%" id="inputStreet"/> -->
+                <Input width="100%" id="inputStreet"/>                
+                <!-- <Input placeholder="No" width="50%" id="inputNo" fieldWidth="100%"/> -->
+                <Input width="50%" id="inputNo"/>
+
+                <Label text="Zip Code/City" id="labelZipCodeCity"/>
+                <!-- <Input placeholder="Zip Code" width="100%" id="inputZipcode"/> -->
+                <Input  width="100%" id="inputZipcode"/>
+                <!-- <Input placeholder="City" width="50%" id="inputCity" fieldWidth="10%"/> -->
+                <Input  width="50%" id="inputCity" fieldWidth="10%"/>
+                <!-- <HBox id="hboxzip" width="100%" alignContent="Inherit"> -->
+                <!-- <items> -->
+                    <!-- <Input width="300px" id="inputZipcode" />
+                    <Input width="480px" id="inputCity"/> -->
+                <!-- </items> -->
+                <!-- </HBox> -->
+                </sap.ui.layout.form:content>
+        </sap.ui.layout.form:SimpleForm>
+    </content>
     </Page>
 </mvc:View>
